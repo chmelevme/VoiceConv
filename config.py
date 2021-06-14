@@ -1,0 +1,12 @@
+ARCHIVE_PATH = ''
+DATASET_PATH = ''
+TRAIN_SPEAKER_IDS = ['p298', 'p340', 'p316', 'p232', 'p260', 'p244', 'p335', 'p237', 'p243', 'p330', 'p254', 'p336', 'p303', 'p228', 'p261', 'p240', 'p247', 'p246', 'p259', 'p304', 'p269', 'p255', 'p276', 'p300', 'p267', 'p339', 'p245', 's5', 'p374', 'p294', 'p251', 'p333', 'p361', 'p277', 'p229', 'p271', 'p347', 'p318', 'p230', 'p250', 'p297', 'p280', 'p362', 'p272', 'p231', 'p263', 'p234', 'p236', 'p311', 'p258', 'p287', 'p273', 'p226', 'p317', 'p283', 'p360', 'p249', 'p292', 'p299', 'p310', 'p238', 'p282', 'p257', 'p363', 'p305', 'p308', 'p252', 'p241', 'p275', 'p351', 'p278', 'p341', 'p288', 'p268', 'p270', 'p312', 'p279', 'p286', 'p233', 'p306', 'p345']
+TEST_SPEAKER_IDS = ['p266', 'p307', 'p295', 'p274', 'p343', 'p293', 'p334', 'p284', 'p265', 'p285', 'p248', 'p364', 'p326', 'p323', 'p227', 'p376', 'p225', 'p281', 'p301', 'p253', 'p264', 'p256', 'p329', 'p302', 'p314', 'p313', 'p239', 'p262']
+N_CONV_BLOCKS = 6
+SUBSAMPLE = 1
+ENCODER_PARAMS = {'c_in':80, 'c_out':4, 'n_conv_blocks':N_CONV_BLOCKS , 'c_h':256, 'subsample':[SUBSAMPLE]*N_CONV_BLOCKS}
+DECODER_PARAMS = {'c_in':4, 'c_out':80, 'n_conv_blocks':N_CONV_BLOCKS , 'c_h':256, 'upsample':[SUBSAMPLE]*N_CONV_BLOCKS}
+ACTIVATION_PARAMS = {'a':0.1}
+LR = 0.0005
+N_EPOCHS = 20
+BATCH_SIZE = 32
